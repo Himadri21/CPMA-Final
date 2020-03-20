@@ -1,0 +1,226 @@
+<html>
+<head><title>DISTANCE CONVERTOR</title>
+   <style>
+    
+    
+    </style>
+    </head>
+    <script>
+    
+    function fun()
+        {
+            
+            var x=document.getElementById("id1").value;
+            var y=document.getElementById("id2").value;
+            var z=document.getElementById("id3").value;
+            var p=document.getElementById("id6").value;
+            var q=document.getElementById("id7").value;
+            var r=document.getElementById("id8").value;
+            
+            
+            if(x)
+                {
+                var a=parseFloat(x);
+                document.getElementById("id6").value=(a*10)+" "+"millimeters";
+                document.getElementById("id1").value=(a)+" "+"centimeters";
+                document.getElementById("id2").value=(a/100)+" "+"meters";
+                document.getElementById("id3").value=(a/100000)+" "+"kilometers"; 
+                document.getElementById("id7").value=(a*10000)+" "+"micrometers";      
+                document.getElementById("id8").value=(a*10000000)+" "+"nanometers";      
+                    
+                }
+            else if(y)
+                {
+                var a=parseFloat(y); 
+                document.getElementById("id6").value=(a*1000)+" "+"millmeters";
+                document.getElementById("id1").value=(a*100)+" "+"centimeters"; 
+                document.getElementById("id2").value=(a)+" "+"meters";
+                document.getElementById("id3").value=(a/1000)+" "+"kilometers"; 
+                document.getElementById("id7").value=(a*1000000)+" "+"micrometers"; 
+                document.getElementById("id8").value=(a*1000000000)+" "+"nanometers"; 
+                }
+            else if(z)
+                {
+                var a=parseFloat(z); 
+                document.getElementById("id6").value=(a*1000000)+" "+"millmeters";
+                document.getElementById("id1").value=(100000*a)+" "+"centimeters";    
+                document.getElementById("id2").value=(a*1000)+" "+"meters";
+                document.getElementById("id3").value=(a)+" "+"kilometers";
+                document.getElementById("id7").value=(a*1000000000)+" "+"micrometers"; 
+                document.getElementById("id8").value=(a/1000000000000)+" "+"nanometers"; 
+                }
+            else if(p)
+                {
+                 var a=parseFloat(p); 
+                document.getElementById("id6").value=(a)+" "+"millmeters";
+                document.getElementById("id1").value=(a/10)+" "+"centimeters";    
+                document.getElementById("id2").value=(a/1000)+" "+"meters";
+                document.getElementById("id3").value=(a/1000000)+" "+"kilometers"; 
+                document.getElementById("id7").value=(a*1000)+" "+"micrometers"; 
+                document.getElementById("id8").value=(a*1000000)+" "+"nanometers"; 
+                }
+            else if(q)
+                {
+                 var a=parseFloat(q); 
+                document.getElementById("id6").value=(a*.001)+" "+"millmeters";
+                document.getElementById("id1").value=(a/10000)+" "+"centimeters";    
+                document.getElementById("id2").value=(a/1000000)+" "+"meters";
+                document.getElementById("id3").value=(a/1000000000)+" "+"kilometers";  
+                document.getElementById("id7").value=(a)+" "+"micrometers"; 
+                document.getElementById("id8").value=(a*1000)+" "+"nanometers"; 
+                }
+            else if(r)
+                {
+                 var a=parseFloat(r); 
+                document.getElementById("id6").value=(a/1000000)+" "+"millmeters";
+                document.getElementById("id1").value=(a/10000000)+" "+"centimeters";    
+                document.getElementById("id2").value=(a/1000000000)+" "+"meters";
+                document.getElementById("id3").value=(a/1000000000000)+" "+"kilometers";  
+                document.getElementById("id7").value=(a/1000)+" "+"micrometers"; 
+                document.getElementById("id8").value=(a)+" "+"nanometers"; 
+                }
+                        
+
+        }
+        function fun1()
+        {
+            var x=document.getElementById("id1").value=null;
+            var y=document.getElementById("id2").value=null;
+            var z=document.getElementById("id3").value=null;
+            var p=document.getElementById("id6").value=null;
+            var q=document.getElementById("id7").value=null;
+            var r=document.getElementById("id8").value=null;
+            
+        }
+ </script>
+    <style>        
+        .row
+       {
+           color: black;
+           font-size:20px;
+            font-family:inherit;
+            margin:50px;
+            padding:10px;
+       }
+        
+     #id1
+        {
+            padding:10px;
+            font-size: 10px;
+            font-family: monospace;
+            background-color: transparent;
+        }
+    #id2
+        {
+            padding:10px;
+            font-size: 10px;
+            font-family: monospace;
+            background-color: transparent;
+        }
+    #id3
+        {
+            padding:10px;
+            font-size: 10px;
+            font-family: monospace;
+            background-color: transparent;
+        } 
+     #id6
+        {
+            padding:10px;
+            font-size: 10px;
+            font-family: monospace;
+            background-color: transparent;
+        }  
+        #id7
+        {
+            padding:10px;
+            font-size: 10px;
+            font-family: monospace;
+            background-color: transparent;
+        }  
+        #id8
+        {
+            padding:10px;
+            font-size: 10px;
+            font-family: monospace;
+            background-color: transparent;
+        }  
+    #id4
+        
+        {
+            height:40px;
+            width:100px;
+            color:white;
+            background-color: black;
+            font-family: Helvetica Neue;
+            margin-left: 30px;
+            margin-bottom: 0%;
+            margin-top: 40px;
+            margin-right: 60px;
+            font-size: 18px;
+            border:none;
+            border-radius:10%;
+        }
+    #id5
+        {
+            height:40px;
+            width:100px;
+            color:white;
+            background-color: black;
+            font-family:Helvetica Neue;
+            margin-right: 50px;
+            font-size: 18px;
+            border:none;
+            border-radius:10%;
+        }
+    
+    </style>
+<body style="background-image: url(img/html-color-codes-color-tutorials-hero-00e10b1f.jpg);background-repeat: no-repeat;background-size:cover; width: 100%; height:100%; margin-top: 0%; margin-left:2%; margin-right: 2%; margin-bottom:0%">
+    
+        <h1 style="margin-top:50px;font-family:Helvetica Neue;font-size:200%;margin-left:15%;">DISTANCE CONVERTER</h1>
+        <supports-screens android:smallScreens="true" 
+          android:normalScreens="true" 
+          android:largeScreens="true"
+          android:xlargeScreens="true"
+          android:anyDensity="true" />
+        
+<center>
+   
+    
+    <table>
+        <tr>
+            <td class="row"><b>Kilometer(km)</b></td>
+            <td><input id="id3" type=text></td> 
+        </tr>
+         <tr>
+             <td class="row"><b>Meter(m)</b></td>
+            <td><input id="id2" type=text></td>
+        </tr>
+        <tr>
+            <td class="row"><b>Centimeter(cm)</b></td>
+            <td><input id="id1" type=text></td>
+        </tr>
+        <tr>
+            <td class="row"><b>Millimeter(mm)</b></td>
+            <td><input id="id6" type=text></td>
+        </tr>
+         <tr>
+             <td class="row"><b>Micrometer(micron)</b></td>
+            <td><input id="id7" type=text></td>
+        </tr>
+         <tr>
+             <td class="row"><b>Nanometer(nm)</b></td>
+            <td><input id="id8" type=text></td>
+        </tr>
+        
+     </table>
+    <input id="id4" type=button value=CONVERT onclick=fun() >
+    <input id="id5" type=button value=REFRESH onclick=fun1()>
+    </center>
+    
+    
+    
+    </body>
+
+</html>
+
